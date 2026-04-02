@@ -19,7 +19,7 @@ private struct PreviewContainer: View {
 
     init() {
         let sharedData = AppData()
-        sharedData.loadDummyData()
+        sharedData.loadDummyData() // yang ini
         
         _logBookViewModel = StateObject(wrappedValue: LogBookViewModel(data: sharedData))
         _profileViewModel = StateObject(wrappedValue: ProfileViewModel(data: sharedData))
